@@ -13,31 +13,31 @@ Arduino是一种开源电子原型平台，受到开发者和爱好者的广泛�
 
 ```cpp  
 void setup(){  
-    pinMode(7, OUTPUT); // 数字口7设置为输出  
-    pinMode(6, OUTPUT); // 数字口6设置为输出  
+    pinMode(2, OUTPUT); // 数字口7设置为输出  
+    pinMode(3, OUTPUT); // 数字口6设置为输出  
 }  
 
 void loop(){  
     //设置风扇逆时针转3000毫秒  
-    digitalWrite(7, LOW);  
-    digitalWrite(6, HIGH);  
+    digitalWrite(2, LOW);  
+    digitalWrite(3, HIGH);  
     delay(3000);  
 
     //设置风扇停止转动1000毫秒  
-    digitalWrite(7, LOW);  
-    digitalWrite(6, LOW);  
+    digitalWrite(2, LOW);  
+    digitalWrite(3, LOW);  
     delay(1000);  
 
     //设置风扇顺时针转3000毫秒  
-    digitalWrite(7, HIGH);  
-    digitalWrite(6, LOW);  
+    digitalWrite(2, HIGH);  
+    digitalWrite(3, LOW);  
     delay(3000);  
 }  
 ```  
 
 ## 4. 代码说明  
 
-将管脚设置为7、6。当7输出为低电平即INA输入低电平，6输出为高电平即INB输入高电平时（输入与输出是相对的），电机顺时针旋转；当7输出为高电平，6输出为低电平时，电机逆时针旋转；当两个管脚都设置为低电平时，电机停止转动。  
+将管脚设置为2、3。当2输出为低电平即INA输入低电平，3输出为高电平即INB输入高电平时（输入与输出是相对的），电机顺时针旋转；当2输出为高电平，3输出为低电平时，电机逆时针旋转；当两个管脚都设置为低电平时，电机停止转动。  
 
 ## 5. 测试结果  
 
