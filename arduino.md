@@ -13,8 +13,8 @@ Arduino是一种开源电子原型平台，受到开发者和爱好者的广泛�
 
 ```cpp  
 void setup(){  
-    pinMode(2, OUTPUT); // 数字口7设置为输出  
-    pinMode(3, OUTPUT); // 数字口6设置为输出  
+    pinMode(2, OUTPUT); // 数字口2设置为输出  
+    pinMode(3, OUTPUT); // 数字口3设置为输出  
 }  
 
 void loop(){  
